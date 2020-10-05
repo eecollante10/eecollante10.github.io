@@ -3,9 +3,11 @@ description: 'Lints md files for english writing.'
 runs:
   using: "composite"
   steps: 
-    shell: python
     - run: echo Hello World 
+      shell: python
     - run: pip install proselint
+      shell: python
     - run: proselint ${{ github.workspace }}/**.md 
+      shell: python
 #    - run: ${{ github.action_path }}/goodbye.sh
 #      shell: bash
