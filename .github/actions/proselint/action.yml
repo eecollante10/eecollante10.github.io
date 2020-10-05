@@ -1,0 +1,12 @@
+name: 'Lint English'
+description: 'Lints md files for english writing.'
+defaults:
+  shell: python
+runs:
+  using: "composite"
+  steps: 
+    - run: echo Hello World 
+    - run: pip install proselint
+    - run: proselint ${{ github.workspace }}/**.md 
+#    - run: ${{ github.action_path }}/goodbye.sh
+#      shell: bash
