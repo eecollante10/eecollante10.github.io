@@ -10,5 +10,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-    - id: lint-english
-      uses: ./.github/actions/proselint 
+    - name: Install Proselint
+      run: python -m pip install proselint
+    - name: Lint English 
+      run: proselint {{ github.workspace }}/**.md
