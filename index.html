@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+# front matter tells Jekyll to process Liquid
+---
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -62,6 +65,17 @@
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
                 <h2 class="mb-5">Experiencia</h2>
+                {% for item in site.data.experiencia %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0"><a href="https://soccermarketing.co" target="_blank">Desarrollador De Aplicaciones Móviles</a></h3>
+                        <div class="subheading mb-3">{{ item.name }}</div>
+                        <p>{{ item.descripcion }}</p>
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Marzo 2020</span></div>
+                </div>
+                {% endfor %}
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0"><a href="https://soccermarketing.co" target="_blank">Desarrollador De Aplicaciones Móviles</a></h3>
