@@ -1,0 +1,7 @@
+plugins:
+  - jekyll-seo-tag
+
+title: Edgard Collante - Hoja De Vida
+locale: es_CO
+tagline: Mi experiencia de trabajo, educación y certificados
+logo: /assets/img/logo.png
