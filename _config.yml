@@ -3,5 +3,6 @@ plugins:
 
 title: Edgard Collante - Hoja De Vida
 locale: es_CO
-tagline: Mi experiencia de trabajo, educación y certificados
+lang: es_CO
+headline: Mi experiencia de trabajo, educación y certificados
 logo: /assets/img/logo.png
