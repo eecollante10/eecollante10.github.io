@@ -82,22 +82,16 @@
         <section class="resume-section" id="education">
             <div class="resume-section-content">
                 <h2 class="mb-5">Educación</h2>
+                {% for item in site.data.educacion %}
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Escuela De Música Fernando Sor</h3>
-                        <div class="subheading mb-3">Producción Musical</div>
-                        <p>GPA &gt; 4</p>
+                        <h3 class="mb-0">{{ item.lugar }}</h3>
+                        <div class="subheading mb-3">{{ item.carrera }}</div>
+                        <p>{{ item.detalles }}</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2017 - 2020</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ item.fecha }}</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Universidad De Los Andes</h3>
-                        <div class="subheading mb-3">Ingeniería De Sistemas Y Computación</div>
-                        <p>Opción en técnicas de grabación musical</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2013 - 2016</span></div>
-                </div>
+                {% endfor %}
             </div>
         </section>
         <hr class="m-0" />
