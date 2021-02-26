@@ -2,7 +2,7 @@
 # front matter tells Jekyll to process Liquid
 ---
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -29,12 +29,12 @@
               class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Acerca</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intereses</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificados</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificates</a></li>
             </ul>
         </div>
     </nav>
@@ -51,7 +51,7 @@
                     Colombia ·
                     <a href="mailto:eedcoh@gmail.com">eedcoh@gmail.com</a>
                 </div>
-                <p class="lead mb-5">Tengo experiencia trabajando en aplicaciones móviles para múltiples plataformas. Sigo una mentalidad de adoptar lo simple y rápido.</p>
+                <p class="lead mb-5">I have experience working on mobile apps for multiple platforms. I follow a mentality of adopting the simple and the fast.</p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://github.com/eecollante10" target="_blank"><i class="fab fa-github"></i></a>
                     <a class="social-icon" href="mailto:eedcoh@gmail.com"><i class="far fa-envelope"></i></a>
@@ -62,8 +62,8 @@
         <!-- Experience-->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
-                <h2 class="mb-5">Experiencia</h2>
-                {% for item in site.data.experiencia %}
+                <h2 class="mb-5">Experience</h2>
+                {% for item in site.data.experiencia_en %}
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0"><a href="{{ item.url }}" target="_blank">{{ item.rol }}</a></h3>
@@ -79,8 +79,8 @@
         <!-- Education-->
         <section class="resume-section" id="education">
             <div class="resume-section-content">
-                <h2 class="mb-5">Educación</h2>
-                {% for item in site.data.educacion %}
+                <h2 class="mb-5">Education</h2>
+                {% for item in site.data.educacion_en %}
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">{{ item.lugar }}</h3>
@@ -96,8 +96,8 @@
         <!-- Skills-->
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
-                <h2 class="mb-5">Habilidades</h2>
-                <div class="subheading mb-3">Lenguajes de programación y herramientas</div>
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming languages and tools</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                     <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
@@ -111,27 +111,27 @@
                     <li class="list-inline-item"><i class="fab fa-android"></i></li>
                     <li class="list-inline-item"><i class="fab fa-apple"></i></li>
                 </ul>
-                <div class="subheading mb-3">Flujo De Trabajo</div>
+                <div class="subheading mb-3">Workflow</div>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Planteamiento de requerimientos
+                        Requirements Planning
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Diseño Multiplataforma
+                        Responsive design
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Desarrollo
+                        Development
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Pruebas y validación con el cliente
+                        Tests and validation with client
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Iteración
+                        Iteration
                     </li>
                 </ul>
             </div>
@@ -140,20 +140,20 @@
         <!-- Interests-->
         <section class="resume-section" id="interests">
             <div class="resume-section-content">
-                <h2 class="mb-5">Intereses</h2>
-                <p>Aparte de desarrollar software, me gusta crear música. Me gusta practicar varios deportes</p>
-                <p class="mb-0">Me gusta el cine, leer acerca de nuevas cosas incluyendo nuevas tenologías y maneras de hacer las cosas.</p>
+                <h2 class="mb-5">Hobbies</h2>
+                <p>Aprt from software development, I like to make music. I like to practice sports</p>
+                <p class="mb-0">I also like going to the cinema, and reading about new things including new technologies and ways to do things.</p>
             </div>
         </section>
         <hr class="m-0" />
         <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
-                <h2 class="mb-5">Certificados</h2>
+                <h2 class="mb-5">Certificates</h2>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        <a href="assets/certificados/iDESWEB-2016-04-02.pdf" target="_blank">Diseño Web</a>,
+                        <a href="assets/certificados/iDESWEB-2016-04-02.pdf" target="_blank">Web Design</a>,
                         <a href="assets/certificados/Certificatehtml5.pdf" target="_blank">Html 5</a>,
                         <a href="assets/certificados/css.jpg" target="_blank">CSS</a>,
                         <a href="assets/certificados/js.jpg" target="_blank">Javascript</a>,
@@ -163,16 +163,16 @@
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                         <a href="assets/certificados/CourseraPythonlearn2015.pdf" target="_blank">Python</a>,
                         <a href="assets/certificados/swift.jpg" target="_blank">Swift</a>,
-                        <a href="assets/certificados/AppsMoviles-2016_04_03.pdf" target="_blank">Aplicaciones Móviles</a>,
+                        <a href="assets/certificados/AppsMoviles-2016_04_03.pdf" target="_blank">Mobile Aplications</a>,
                         <a href="assets-certificados/cpp.jpg" target="_blank">C++</a>
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        <a href="assets/certificados/csGameprogramming2015.pdf" target="_blank">Programación de videojuegos</a>,
+                        <a href="assets/certificados/csGameprogramming2015.pdf" target="_blank">Videogame programming</a>,
                         <br>
-                        <a href="assets/certificados/aiParaArteJuegos.pdf" target="_blank">Adobe Illustrator para arte de juegos</a>,
+                        <a href="assets/certificados/aiParaArteJuegos.pdf" target="_blank">Adobe Illustrator for game art</a>,
                         <br>
-                        <a href="assets/certificados/aiPersonajes.pdf" target="_blank">Adobe Illustrator para personajes de videojuegos</a>
+                        <a href="assets/certificados/aiPersonajes.pdf" target="_blank">Adobe Illustrator videogame characters</a>
                     </li>
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
